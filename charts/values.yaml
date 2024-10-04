@@ -68,7 +68,7 @@ ingress:
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: "app.hanlly.local"
+    - host: "app.dev.hanlly.local"
       paths:
         - path: /
           pathType: "Prefix"
@@ -76,7 +76,7 @@ ingress:
     - secretName: "app-cert"
       hosts:
         - "*.hanlly.local"
-        - "app.hanlly.local"
+        - "app.dev.hanlly.local"
 
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious
